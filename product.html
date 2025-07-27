@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .ebook-container {
+            max-width: 600px;
+            margin: 60px auto;
+            background: rgba(20, 20, 20, 0.97);
+            border: 2px solid #00ff00;
+            border-radius: 12px;
+            box-shadow: 0 0 30px #00ff0088;
+            padding: 40px 30px;
+            color: #e0ffe0;
+            font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+            animation: fadeInUp 1.5s;
+            position: relative;
+        }
+
+        .ebook-title {
+            color: #00ff00;
+            font-size: 2em;
+            text-align: center;
+            text-shadow: 0 0 10px #00ff00;
+            margin-bottom: 18px;
+            letter-spacing: 2px;
+        }
+
+        .ebook-quote {
+            color: #00ff00;
+            font-size: 1.1em;
+            font-style: italic;
+            text-align: center;
+            margin: 18px 0;
+        }
+
+        .ebook-features {
+            margin: 22px 0;
+            padding-left: 18px;
+        }
+
+        .ebook-features li {
+            margin-bottom: 8px;
+        }
+
+        .ebook-img {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .github-link {
+            display: inline-block;
+            font-size: 1.15em;
+            padding: 10px 32px;
+            margin-top: 10px;
+            text-align: center;
+            background-color: #00ff00;
+            color: #000;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .github-link:hover {
+            background-color: #00cc00;
+            transform: translateY(-2px);
+        }
+
+        .github-link:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .ebook-container {
+                margin: 30px 10px;
+                padding: 30px 20px;
+            }
+
+            .ebook-title {
+                font-size: 1.8em;
+            }
+
+            .ebook-quote {
+                font-size: 1em;
+            }
+
+            .github-link {
+                padding: 8px 24px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!-- Navegação pode ser adicionada aqui -->
+    </nav>
+    <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; align-items: flex-start;">
+        <!-- Ebook NMAP -->
+        <div class="ebook-container" style="position: relative; min-width: 320px; flex: 1 1 340px;">
+            <img src="./img/NMAP.png" alt="Capa do ebook Nmap"
+                style="position: absolute; top: -40px; left: -40px; width: 120px; height: auto; border-radius: 10px; border: 2px solid #00ff00; box-shadow: 0 0 18px #00ff0044;">
+            <div class="ebook-title">🛠 NMAP – Manual para Iniciantes</div>
+            <div class="ebook-quote">
+                ╰┈➤ 𝙊 𝙈𝘼𝙋𝘼 𝘿𝘼 𝙒𝙀𝘽 𝙉𝘼̃𝙊 𝙎𝙀 𝘿𝙀𝙎𝘾𝙊𝘽𝙍𝙀... 𝙎𝙀 𝙎𝘾𝘼𝙉𝙀𝘼.
+            </div>
+            <p style="font-size:1.15em;">
+                📡 Este é o guia essencial para qualquer iniciante na arte do hacking ético.<br>
+                🧠 Aprenda a usar o Nmap, a principal ferramenta de varredura de redes, de forma tática e prática.
+            </p>
+            <ul class="ebook-features">
+                <li>Introdução ao escaneamento de portas</li>
+                <li>Técnicas de fingerprinting</li>
+                <li>Deteção de sistemas operacionais</li>
+                <li>Enumeração de serviços</li>
+                <li>Dicas para iniciar seus próprios testes de intrusão</li>
+            </ul>
+            <div class="ebook-quote">
+                🛸 "Toda missão começa com um reconhecimento... e todo reconhecimento começa com o Nmap."<br>
+                🟢 Leitura obrigatória para quem quer caçar sistemas, não obedecer regras.
+            </div>
+            <div class="ebook-img">
+                <!-- Espaço para imagem extra se quiser -->
+            </div>
+            <div style="text-align:center; margin-top: 24px;">
+                <a href="https://pay.cakto.com.br/374hd4c_420741" class="github-link">
+                    Adquirir o ebook
+                </a>
+            </div>
+        </div>
+        <!-- Ebook Hacking para Humanos -->
+        <div class="ebook-container" style="position: relative; min-width: 320px; flex: 1 1 340px;">
+            <img src="./img/Hacking-para-Humanos.png" alt="Capa do ebook Hacking para Humanos"
+                style="position: absolute; top: -40px; left: -40px; width: 120px; height: auto; border-radius: 10px; border: 2px solid #00ff00; box-shadow: 0 0 18px #00ff0044;">
+            <div class="ebook-title">🤖 Hacking para Humanos - Um Guia Simples e Poderoso</div>
+            <div class="ebook-quote">
+                ╰┈➤ 𝘼 𝙎𝙀𝙂𝙐𝙍𝘼𝙉Ç𝘼 𝙉Ã𝙊 𝙀𝙎𝙏𝘼́ 𝙎𝙊𝙈𝙀𝙉𝙏𝙀 𝙉𝘼 𝙏𝙀𝘾𝙉𝙊𝙇𝙊𝙂𝙄𝘼... 𝙀𝙎𝙏𝘼́ 𝙉𝘼
+                𝙈𝙀𝙉𝙏𝙀.
+            </div>
+            <p style="font-size:1.15em;">
+                📚 Descubra como o fator humano é decisivo na segurança digital.<br>
+                🧠 Aprenda técnicas de engenharia social, manipulação e defesa contra ataques que exploram pessoas.
+            </p>
+            <ul class="ebook-features">
+                <li>Introdução à engenharia social</li>
+                <li>Principais técnicas de manipulação</li>
+                <li>Como proteger pessoas e empresas</li>
+                <li>Estudos de casos reais</li>
+                <li>Dicas para fortalecer sua postura defensiva</li>
+            </ul>
+            <div class="ebook-quote">
+                🧩 "O elo mais fraco da segurança é sempre humano."<br>
+                🟢 Leitura essencial para quem quer entender e proteger o lado humano da tecnologia.
+            </div>
+            <div style="text-align:center; margin-top: 24px;">
+                <a href="https://pay.cakto.com.br/rjcpesy_475038" class="github-link">
+                    Adquirir o ebook
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Futuros ebooks -->
+    <div
+        style="max-width: 900px; margin: 60px auto 40px auto; background: rgba(20,20,20,0.97); border: 2px solid #00ff00; border-radius: 12px; box-shadow: 0 0 30px #00ff0088; padding: 36px 28px; color: #e0ffe0; font-family: 'Fira Mono', 'Courier New', Courier, monospace; animation: fadeInUp 1.5s;">
+        <h2
+            style="color:#00ff00; text-align:center; text-shadow:0 0 10px #00ff00; letter-spacing:2px; margin-bottom:18px;">
+            🚀 Futuros Ebooks da Society_Fr13nd5
+        </h2>
+        <ul style="font-size:1.15em; margin:0 auto; max-width:600px; list-style: none; padding:0;">
+            <li style="margin-bottom:18px;">
+                <strong style="color:#00ff00;">Termux Hacker Pro</strong><br>
+                Guia avançado para transformar seu Android em uma verdadeira máquina de pentest usando Termux. Dicas,
+                scripts e automações para hackers mobile.
+            </li>
+            <li style="margin-bottom:18px;">
+                <strong style="color:#00ff00;">Osint - Ferramentas Úteis</strong><br>
+                Descubra as melhores ferramentas e técnicas de OSINT para investigação digital, coleta de dados e
+                análise de informações públicas.
+            </li>
+            <li style="margin-bottom:18px;">
+                <strong style="color:#00ff00;">Criando Sites - HTML, CSS e JavaScript</strong><br>
+                Aprenda do zero a criar sites modernos e responsivos, com dicas práticas e projetos reais para quem quer
+                dominar o desenvolvimento web.
+            </li>
+        </ul>
+        <div style="text-align:center; margin-top:28px; color:#00ff00;">
+            Fique ligado! Em breve, todos disponíveis para download e estudo.
+        </div>
+    </div>
+    <footer style="width:100%; background:#111; border-top:2px solid #00ff00; padding:18px 0; margin-top:40px;">
+        <div style="text-align:center; color:#00ff00; font-family:'Fira Mono', 'Courier New', Courier, monospace; font-size:1.08em;">
+            &copy; Todos os direitos reservados - feito por K1r4_Fr13nd5 com muita inspiração
+        </div>
+    </footer>
+</body>
+
+</html>

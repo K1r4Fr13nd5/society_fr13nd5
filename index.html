@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao site da Society_Fr13nd5</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/dark-icon.jpg" type="image/x-icon">
+    <style>
+        main {
+            max-width: 900px;
+            margin: 40px auto 0 auto;
+            background: rgba(20, 20, 20, 0.97);
+            border: 2px solid #00ff00;
+            border-radius: 12px;
+            box-shadow: 0 0 30px #00ff0088;
+            padding: 40px 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        section {
+            margin-bottom: 38px;
+            padding-bottom: 18px;
+            border-bottom: 1px dashed #00ff00;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h3 {
+            color: #00ff00;
+            font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 8px #00ff00;
+            letter-spacing: 2px;
+        }
+
+        p {
+            color: #e0ffe0;
+            font-size: 1.15em;
+            line-height: 1.7;
+            font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+            margin-bottom: 0;
+        }
+
+        .github-link {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #00ff00;
+            border-radius: 5px;
+            padding: 8px 24px;
+            transition: background 0.2s, color 0.2s;
+            text-align: center;
+            box-shadow: 0 0 10px #00ff0044;
+        }
+
+        .github-link:hover {
+            background: #00ff00;
+            color: #111;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        .membros-destaque {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+            justify-content: space-between;
+        }
+
+        .card-membro {
+            flex: 1 1 350px;
+            background: rgba(30, 30, 30, 0.98);
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            box-shadow: 0 0 18px #00ff0044;
+            padding: 28px 22px;
+            margin-bottom: 20px;
+            animation: fadeInUp 1.5s;
+        }
+
+        .card-membro h4 {
+            color: #00ff00;
+            font-size: 1.25em;
+            margin-bottom: 10px;
+            font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+            text-shadow: 0 0 6px #00ff00;
+        }
+
+        .card-membro p {
+            color: #e0ffe0;
+            font-size: 1.08em;
+            margin-bottom: 0;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card-kira {
+            background-image: url('./img/kira.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .card-anubis {
+            background-image: url('./img/anubis.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Sobre nós</a>
+            </li>
+            <li>
+                <a href="project.html">Projetos</a>
+            </li>
+            <li>
+                <a href="contact.html">Contato</a>
+            </li>
+            <li>
+                <a href="service.html">Serviços</a>
+            </li>
+            <li>
+                <a href="product.html">Produtos</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div class="center">
+            <img src="./img/society.jpg" alt="Logo do K1r4_Fr13nd5">
+        </div>
+        <h1
+            style="text-align:center; color:#00ff00; text-shadow:0 0 12px #00ff00; font-family:'Fira Mono', 'Courier New', Courier, monospace;">
+            Seja muito Bem-vindo à <span style="letter-spacing:2px;">Society_Fr13nd5</span>
+        </h1>
+        <h2 style="text-align:center; color:#e0ffe0; font-family:'Fira Mono', 'Courier New', Courier, monospace;">
+            Um lugar para compartilhar e conectar pessoas
+        </h2>
+    </header>
+    <main>
+        <section>
+            <h3>Sobre nós</h3>
+            <p>
+                Somos um grupo de amigos apaixonados por tecnologia, programação e segurança da informação.<br>
+                Nosso objetivo é criar um espaço onde possamos compartilhar conhecimento, aprender juntos e desenvolver
+                projetos inovadores.<br>
+                A Society_Fr13nd5 nasceu do desejo de unir pessoas com interesses semelhantes, promovendo a colaboração
+                e o crescimento mútuo em um ambiente acolhedor e motivador.
+            </p>
+        </section>
+        <section>
+            <h3>Nossos Membros</h3>
+            <p>
+                <strong>K1r4</strong> é um entusiasta em cibersegurança, sempre buscando novas formas de proteger
+                sistemas e explorar vulnerabilidades de maneira ética, contribuindo para um mundo digital mais
+                seguro.<br>
+                <strong>4nub15</strong> é apaixonado por automação, desenvolvendo bots para WhatsApp e Telegram que
+                facilitam tarefas e ampliam as possibilidades de integração entre plataformas, tornando o dia a dia mais
+                prático e eficiente.
+            </p>
+        </section>
+        <section>
+            <h3>Conecte-se conosco</h3>
+            <p>
+                Aqui na Society_Fr13nd5, acreditamos que o conhecimento deve ser compartilhado e que juntos podemos ir
+                mais longe.<br>
+                Se você também é movido pela curiosidade e pelo desejo de aprender, venha fazer parte da nossa
+                comunidade!<br>
+                Junte-se a nós para trocar experiências, participar de projetos inovadores e ajudar a construir um
+                espaço onde a tecnologia é usada para transformar vidas.
+            </p>
+        </section>
+        <section style="position: relative; overflow: hidden;">
+            <h3>Links Úteis</h3>
+            <div id="github-animation"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0;">
+            </div>
+            <p style="position: relative; z-index: 1;">
+                Confira nossos projetos no GitHub e fique por dentro das novidades.<br>
+                Estamos sempre abertos a colaborações e sugestões!
+            </p>
+            <a class="github-link" href="https://github.com/K1r4-Fr13nd5"
+                style="position: relative; z-index: 1;">Acesse nosso GitHub - K1r4_Fr13nd5</a>
+            <a class="github-link" href="https://github.com/4nub15-Fr13nd5"
+                style="position: relative; z-index: 1;">Acesse nosso GitHub - 4NUB15_Fr13nd5</a>
+            <script>
+                // Animação estilo "GitHub" com ícones flutuando mais visíveis
+                const githubAnim = document.getElementById('github-animation');
+                function createGitHubIcon() {
+                    const icon = document.createElement('img');
+                    icon.src = './img/github.jpg'; // Use seu ícone do GitHub
+                    icon.alt = 'GitHub';
+                    icon.style.position = 'absolute';
+                    icon.style.width = '40px';
+                    icon.style.height = '40px';
+                    icon.style.borderRadius = '50%';
+                    icon.style.opacity = '0.35'; // Mais visível
+                    icon.style.left = Math.random() * 90 + '%';
+                    icon.style.top = Math.random() * 80 + '%';
+                    icon.style.filter = 'drop-shadow(0 0 8px #00ff00)';
+                    icon.style.transition = 'transform 2.2s linear, opacity 2.2s linear';
+                    githubAnim.appendChild(icon);
+
+                    setTimeout(() => {
+                        icon.style.transform = 'translateY(-60px) scale(1.3)';
+                        icon.style.opacity = '0.05';
+                    }, 100);
+
+                    setTimeout(() => {
+                        githubAnim.removeChild(icon);
+                    }, 2400);
+                }
+                setInterval(createGitHubIcon, 700);
+            </script>
+        </section>
+        <section style="position: relative; overflow: hidden;">
+            <h3>Estamos recrutando</h3>
+            <div id="whatsapp-animation"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0;">
+            </div>
+            <p style="position: relative; z-index: 1;">
+                Se você é apaixonado por tecnologia e deseja fazer parte de um grupo colaborativo e inovador, entre em
+                contato conosco!<br>
+                Estamos sempre em busca de novos talentos para se juntar à nossa equipe e contribuir com ideias e projetos.
+            </p>
+            <div style="text-align:center; margin-top: 18px; position: relative; z-index: 1;">
+                <a href="https://whatsapp.com/channel/0029VbBN0cbFsn0jRaYdTk1Y" target="_blank"
+                    style="display:inline-block; background:#25d366; color:#111; font-family:'Fira Mono', 'Courier New', Courier, monospace; font-weight:bold; border-radius:8px; border:2px solid #00ff00; padding:12px 32px; font-size:1.15em; box-shadow:0 0 10px #25d366; text-decoration:none; transition:background 0.2s;">
+                    Acesse o nosso canal
+                </a>
+            </div>
+            <script>
+                // Animação estilo WhatsApp com ícones flutuando
+                const whatsappAnim = document.getElementById('whatsapp-animation');
+                function createWhatsAppIcon() {
+                    const icon = document.createElement('img');
+                    icon.src = './img/whatsapp.jpg'; // Use seu ícone do WhatsApp
+                    icon.alt = 'WhatsApp';
+                    icon.style.position = 'absolute';
+                    icon.style.width = '38px';
+                    icon.style.height = '38px';
+                    icon.style.borderRadius = '50%';
+                    icon.style.opacity = '0.28';
+                    icon.style.left = Math.random() * 90 + '%';
+                    icon.style.top = Math.random() * 80 + '%';
+                    icon.style.filter = 'drop-shadow(0 0 8px #25d366)';
+                    icon.style.transition = 'transform 2.2s linear, opacity 2.2s linear';
+                    whatsappAnim.appendChild(icon);
+
+                    setTimeout(() => {
+                        icon.style.transform = 'translateY(-60px) scale(1.2)';
+                        icon.style.opacity = '0.05';
+                    }, 100);
+
+                    setTimeout(() => {
+                        whatsappAnim.removeChild(icon);
+                    }, 2400);
+                }
+                setInterval(createWhatsAppIcon, 800);
+            </script>
+        </section>
+        <div class="membros-destaque">
+            <div class="card-membro card-kira"
+                style="background-image: url('./img/kira.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div style="background: rgba(30,30,30,0.92); border-radius: 10px; padding: 18px;">
+                    <h4>K1r4_Fr13nd5</h4>
+                    <p>
+                        Especialista em cibersegurança, K1r4_Fr13nd5 produz eBooks exclusivos sobre segurança digital
+                        para venda, desenvolve ferramentas de pentest em Python e está elaborando uma Inteligência
+                        Artificial dedicada a pentest.<br>
+                        Seu foco é criar soluções práticas e acessíveis para profissionais e entusiastas da área, sempre
+                        buscando inovação e qualidade.
+                    </p>
+                </div>
+            </div>
+            <div class="card-membro card-anubis"
+                style="background-image: url('./img/anubis.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div style="background: rgba(30,30,30,0.92); border-radius: 10px; padding: 18px;">
+                    <h4>4nub15</h4>
+                    <p>
+                        Apaixonado por automação, 4nub15 desenvolve bots que automatizam processos de pentest, tornando
+                        as análises mais rápidas, eficientes e inteligentes.<br>
+                        Seu trabalho facilita a integração entre diferentes plataformas e potencializa o uso de
+                        ferramentas de segurança, trazendo agilidade para o dia a dia dos profissionais.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 60px; margin: 40px 0 0 0;">
+            <!-- K1r4_Fr13nd5 -->
+            <div style="display: flex; flex-direction: row; align-items: center; gap: 18px;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+                    <a href="https://github.com/K1r4-Fr13nd5" target="_blank" title="GitHub K1r4_Fr13nd5"
+                        style="background: #111; border: 2px solid #00ff00; border-radius: 50%; width: 54px; height: 54px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 12px #00ff0044; margin-bottom: 4px; transition: background 0.2s;">
+                        <img src="./img/github.jpg" alt="GitHub K1r4" style="width: 32px; height: 32px; border-radius: 50%;">
+                    </a>
+                    <a href="https://instagram.com/k1r4.fr13nd5" target="_blank" title="Instagram K1r4_Fr13nd5"
+                        style="background: #111; border: 2px solid #00ff00; border-radius: 50%; width: 54px; height: 54px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 12px #00ff0044; transition: background 0.2s;">
+                        <img src="./img/instagram.jpg" alt="Instagram K1r4" style="width: 32px; height: 32px; border-radius: 50%;">
+                    </a>
+                </div>
+                <div style="color:#e0ffe0; font-family:'Fira Mono', 'Courier New', Courier, monospace; font-size:1em;">
+                    <strong>K1r4_Fr13nd5</strong><br>
+                    <span style="font-size:0.97em;">GitHub e Instagram oficiais do especialista em cibersegurança, criador de eBooks e ferramentas de pentest.</span>
+                </div>
+            </div>
+            <!-- 4nub15_Fr13nd5 -->
+            <div style="display: flex; flex-direction: row; align-items: center; gap: 18px;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+                    <a href="https://github.com/4nub15-Fr13nd5" target="_blank" title="GitHub 4nub15_Fr13nd5"
+                        style="background: #111; border: 2px solid #00ff00; border-radius: 50%; width: 54px; height: 54px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 12px #00ff0044; margin-bottom: 4px; transition: background 0.2s;">
+                        <img src="./img/github.jpg" alt="GitHub 4nub15" style="width: 32px; height: 32px; border-radius: 50%;">
+                    </a>
+                    <a href="https://instagram.com/4nub15_fr13nd5" target="_blank" title="Instagram 4nub15_Fr13nd5"
+                        style="background: #111; border: 2px solid #00ff00; border-radius: 50%; width: 54px; height: 54px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 12px #00ff0044; transition: background 0.2s;">
+                        <img src="./img/instagram.jpg" alt="Instagram 4nub15" style="width: 32px; height: 32px; border-radius: 50%;">
+                    </a>
+                </div>
+                <div style="color:#e0ffe0; font-family:'Fira Mono', 'Courier New', Courier, monospace; font-size:1em;">
+                    <strong>4nub15_Fr13nd5</strong><br>
+                    <span style="font-size:0.97em;">GitHub e Instagram do mestre dos bots, automação e integração para pentest e segurança digital.</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer style="width:100%; background:#111; border-top:2px solid #00ff00; padding:18px 0; margin-top:40px;">
+        <div style="text-align:center; color:#00ff00; font-family:'Fira Mono', 'Courier New', Courier, monospace; font-size:1.08em;">
+            &copy; Todos os direitos reservados - feito por K1r4_Fr13nd5 com muita inspiração
+        </div>
+    </footer>
+</body>
+
+</html>

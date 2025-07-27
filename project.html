@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos Society_Fr13nd5</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/github.jpg" type="image/x-icon">
+    <style>
+        body {
+            background: #111;
+            color: #00ff00;
+            font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 60px auto;
+            background: rgba(20, 20, 20, 0.95);
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            box-shadow: 0 0 30px #00ff0088;
+            padding: 40px;
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 1.5s;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            text-shadow: 0 0 10px #00ff00;
+            margin-bottom: 20px;
+            animation: blink 2.5s infinite;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            animation: fadeInUp 2s;
+        }
+
+        .github-link {
+            display: block;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.3em;
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #00ff00;
+            border-radius: 5px;
+            padding: 12px 0;
+            transition: background 0.2s, color 0.2s;
+            animation: fadeInUp 2.2s;
+        }
+
+        .github-link:hover {
+            background: #00ff00;
+            color: #111;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        .ascii {
+            font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+            color: #00ff00;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1em;
+            animation: hackerGlow 2s infinite alternate;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        @keyframes hackerGlow {
+            from {
+                text-shadow: 0 0 10px #00ff00, 0 0 20px #8e44ad;
+            }
+
+            to {
+                text-shadow: 0 0 30px #00ff00, 0 0 60px #8e44ad;
+            }
+        }
+
+        #matrix-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        footer {
+            width: 100%;
+            background: #111;
+            border-top: 2px solid #00ff00;
+            padding: 18px 0;
+            margin-top: 40px;
+        }
+
+        footer div {
+            text-align: center;
+            color: #00ff00;
+            font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+            font-size: 1.08em;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="matrix-canvas"></canvas>
+    <div class="container" style="position: relative;">
+        <div id="github-animation"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0;">
+        </div>
+        <div class="ascii">
+            <!-- ASCII ART opcional para estilo hacker -->
+            <pre>
+
+  _________             .__        __           ___________      ____________             .___.________
+ /   _____/ ____   ____ |__| _____/  |_ ___.__. \_   _____/_____/_   \_____  \  ____    __| _/|   ____/
+ \_____  \ /  _ \_/ ___\|  |/ __ \   __<   |  |  |    __) \_  __ \   | _(__  < /    \  / __ | |____  \ 
+ /        (  <_> )  \___|  \  ___/|  |  \___  |  |     \   |  | \/   |/       \   |  \/ /_/ | /       \
+/_______  /\____/ \___  >__|\___  >__|  / ____|  \___  /   |__|  |___/______  /___|  /\____ |/______  /
+        \/            \/        \/      \/           \/                     \/     \/      \/       \/ 
+                 
+
+            </pre>
+        </div>
+        <h1>Projetos Hacker Society_Fr13nd5</h1>
+        <p>
+            Bem-vindo à nossa central de projetos! Aqui você encontra iniciativas inovadoras, scripts, ferramentas e
+            ideias para quem curte tecnologia, segurança e cultura hacker.<br>
+            Explore, contribua e faça parte da nossa comunidade!
+        </p>
+        <!-- Botões do GitHub -->
+        <div
+            style="display: flex; justify-content: center; gap: 32px; margin-bottom: 18px; position: relative; z-index: 1;">
+            <a class="github-link" href="https://github.com/K1r4Fr13nd5" target="_blank"
+                style="display: flex; align-items: center; gap: 10px; background: #111; border-radius: 8px; border: 2px solid #00ff00; padding: 10px 24px; font-size: 1.1em; color: #00ff00; font-weight: bold; text-decoration: none; box-shadow: 0 0 10px #00ff0044;">
+                <img src="./img/github.jpg" alt="GitHub K1r4" style="width: 28px; height: 28px; border-radius: 50%;">
+                GitHub K1r4_Fr13nd5
+            </a>
+            <a class="github-link" href="https://github.com/4nub15-Fr13nd5" target="_blank"
+                style="display: flex; align-items: center; gap: 10px; background: #111; border-radius: 8px; border: 2px solid #00ff00; padding: 10px 24px; font-size: 1.1em; color: #00ff00; font-weight: bold; text-decoration: none; box-shadow: 0 0 10px #00ff0044;">
+                <img src="./img/github.jpg" alt="GitHub 4nub15" style="width: 28px; height: 28px; border-radius: 50%;">
+                GitHub 4nub15_Fr13nd5
+            </a>
+        </div>
+        <!-- Fim dos botões -->
+        <p style="text-align:center;">
+            Siga-nos para novidades, tutoriais e desafios semanais.<br>
+            Junte-se à revolução digital!
+        </p>
+    </div>
+    <footer>
+        <div>
+            &copy; Todos os direitos reservados - feito por K1r4_Fr13nd5 com muita inspiração
+        </div>
+    </footer>
+    <script>
+        // Matrix Animation Verde e Roxo
+        const canvas = document.getElementById('matrix-canvas');
+        const ctx = canvas.getContext('2d');
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+
+        const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&';
+        const fontSize = 18;
+        const columns = Math.floor(width / fontSize);
+        const dropsGreen = Array(columns).fill(1);
+        const dropsPurple = Array(columns).fill(1);
+
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(17, 17, 17, 0.15)';
+            ctx.fillRect(0, 0, width, height);
+
+            ctx.font = fontSize + "px Fira Mono, Courier New, monospace";
+
+            // Verde
+            ctx.fillStyle = "#00ff00";
+            for (let i = 0; i < dropsGreen.length; i += 2) {
+                const text = letters[Math.floor(Math.random() * letters.length)];
+                ctx.fillText(text, i * fontSize, dropsGreen[i] * fontSize);
+                if (dropsGreen[i] * fontSize > height && Math.random() > 0.975) {
+                    dropsGreen[i] = 0;
+                }
+                dropsGreen[i]++;
+            }
+
+            // Roxo
+            ctx.fillStyle = "#8e44ad";
+            for (let i = 1; i < dropsPurple.length; i += 2) {
+                const text = letters[Math.floor(Math.random() * letters.length)];
+                ctx.fillText(text, i * fontSize, dropsPurple[i] * fontSize);
+                if (dropsPurple[i] * fontSize > height && Math.random() > 0.975) {
+                    dropsPurple[i] = 0;
+                }
+                dropsPurple[i]++;
+            }
+        }
+        setInterval(drawMatrix, 50);
+
+        window.addEventListener('resize', () => {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+            dropsGreen.length = 0;
+            dropsPurple.length = 0;
+            for (let i = 0; i < columns; i++) {
+                dropsGreen.push(1);
+                dropsPurple.push(1);
+            }
+        });
+
+        // Animação estilo GitHub com ícones flutuando na área dos botões
+        const githubAnim = document.getElementById('github-animation');
+        function createGitHubIcon() {
+            const icon = document.createElement('img');
+            icon.src = './img/github.jpg'; // Use seu ícone do GitHub
+            icon.alt = 'GitHub';
+            icon.style.position = 'absolute';
+            icon.style.width = '36px';
+            icon.style.height = '36px';
+            icon.style.borderRadius = '50%';
+            icon.style.opacity = '0.28';
+            icon.style.left = Math.random() * 90 + '%';
+            icon.style.top = Math.random() * 80 + '%';
+            icon.style.filter = 'drop-shadow(0 0 8px #00ff00)';
+            icon.style.transition = 'transform 2.2s linear, opacity 2.2s linear';
+            githubAnim.appendChild(icon);
+
+            setTimeout(() => {
+                icon.style.transform = 'translateY(-60px) scale(1.2)';
+                icon.style.opacity = '0.05';
+            }, 100);
+
+            setTimeout(() => {
+                githubAnim.removeChild(icon);
+            }, 2400);
+        }
+        setInterval(createGitHubIcon, 800);
+    </script>
+    <footer style="width:100%; background:#111; border-top:2px solid #00ff00; padding:18px 0; margin-top:40px;">
+        <div
+            style="text-align:center; color:#00ff00; font-family:'Fira Mono', 'Courier New', Courier, monospace; font-size:1.08em;">
+            &copy; Todos os direitos reservados - feito por K1r4_Fr13nd5 com muita inspiração
+        </div>
+    </footer>
+</body>
+
+</html>

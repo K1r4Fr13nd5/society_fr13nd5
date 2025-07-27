@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato Hacker Society_Fr13nd5</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="icon" href="./img/contact-icon.jpg" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            color: #00ff00;
+            font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 60px auto;
+            background: rgba(20, 20, 20, 0.95);
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            box-shadow: 0 0 30px #00ff0088;
+            padding: 40px;
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 1.5s;
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: 0 0 10px #00ff00;
+            margin-bottom: 30px;
+            animation: blink 2.5s infinite;
+        }
+
+        .telegram-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #00ff00;
+            border-radius: 5px;
+            padding: 10px 0;
+            transition: background 0.2s, color 0.2s;
+            animation: fadeInUp 2s;
+        }
+
+        .telegram-link:hover {
+            background: #00ff00;
+            color: #111;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        .sobre-nos {
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px dashed #00ff00;
+            color: #00ff00;
+            font-size: 1em;
+            animation: fadeInUp 2.5s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        /* Matrix canvas sempre atrás */
+        #matrix-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="matrix-canvas"></canvas>
+    <div class="container">
+        <h1>Contato Hacker Society_Fr13nd5</h1>
+        <p style="text-align:center;">
+            Fale diretamente conosco pelo Telegram:
+        </p>
+        <a class="telegram-link" href="https://t.me/Bl4z_3n" target="_blank">4NUB15_Fr13nd5</a>
+        <a class="telegram-link" href="https://t.me/NeroLuckas6_6" target="_blank">K1r4_Fr13nd5</a>
+
+        <!-- Aqui você pode colocar informações sobre vocês dois -->
+        <div class="sobre-nos">
+            <h2>Contate-nos para recrutamento em nossa Sociedade</h2>
+            <p>
+                Somos entusiastas de tecnologia e segurança digital, apaixonados por compartilhar conhecimento e ajudar
+                a comunidade.
+                Se você tem interesse em aprender mais sobre hacking ético, segurança da informação ou desenvolvimento
+                de software,
+                não hesite em entrar em contato conosco!
+            </p>
+            <p>
+                Estamos sempre abertos a novas colaborações e discussões sobre o mundo da tecnologia.
+            </p>
+        </div>
+    </div>
+    <script>
+        // Matrix Animation
+        const canvas = document.getElementById('matrix-canvas');
+        const ctx = canvas.getContext('2d');
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+
+        const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&';
+        const fontSize = 18;
+        const columns = Math.floor(width / fontSize);
+        const drops = Array(columns).fill(1);
+
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(17, 17, 17, 0.15)';
+            ctx.fillRect(0, 0, width, height);
+            ctx.font = fontSize + "px Fira Mono, Courier New, monospace";
+            ctx.fillStyle = "#00ff00";
+            for (let i = 0; i < drops.length; i++) {
+                const text = letters[Math.floor(Math.random() * letters.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                if (drops[i] * fontSize > height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+        setInterval(drawMatrix, 50);
+
+        // Responsivo ao redimensionar
+        window.addEventListener('resize', () => {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+        });
+        
+    </script>
+</body>
+
+</html>
